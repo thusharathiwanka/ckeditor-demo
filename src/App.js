@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+// import BalloonBlockEditorComponent from './components/BalloonBlockEditor';
+// import BalloonEditorComponent from './components/BalloonEditor';
+// import ClassicEditorComponent from './components/ClassicEditor';
+import DocumentEditorComponent from './components/DocumentEditor';
+// import InlineEditorComponent from './components/InlineEditor';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ maxWidth: '1000px', margin: '0 auto' }}>
+      {/* <ClassicEditorComponent /> */}
+      {/* <InlineEditorComponent /> */}
+      {/* <BalloonEditorComponent /> */}
+      {/* <BalloonBlockEditorComponent /> */}
+      <DocumentEditorComponent />
     </div>
   );
 }
